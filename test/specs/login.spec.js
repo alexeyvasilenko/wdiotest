@@ -1,5 +1,5 @@
 import Page from  '../pageobjects/page';
-import ProfilePage from '../pageobjects/profile.page';
+import ProfilePage from '../pageobjects/portal/profile.portal.page';
 import LoginPage from '../pageobjects/login.page';
 
 describe('Auth', () => {
