@@ -9,10 +9,13 @@ exports.config = {
         {
             maxInstances: 1,
             browserName: 'firefox',
-            acceptInsecureCerts: true
-        }
+            'moz:firefoxOptions': {
+                args: ['--window-size=1280,720', '--headless', '--disable-gpu']
+            },
+        },
     ],
     services: ['geckodriver'],
+
     ...base,
     ...hooks
 }
