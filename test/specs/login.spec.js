@@ -5,7 +5,7 @@ import LoginPage from '../pageobjects/login.page';
 describe('Auth', () => {
     beforeEach(() => {
         LoginPage.open();
-        LoginPage.openLoginPageBtn();
+        // LoginPage.openLoginPageBtn();
     });
 
     afterEach( () => {

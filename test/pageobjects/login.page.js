@@ -1,7 +1,7 @@
 import Page from './page';
 
 class LoginPage extends Page {
-    get openLoginPage () { return $$('.mr-4')[0]; }
+    // get openLoginPage () { return $$('.mr-4')[0]; }
     get inputUsername () { return $('#normal_login_email'); }
     get inputPassword () { return $('#normal_login_password'); }
     get buttonSubmit () { return $('.login-form-button'); }
@@ -9,12 +9,12 @@ class LoginPage extends Page {
     get loginValidationError () { return $('//div[contains(@class, "ant-form-item-with-help")][.//input[@id="normal_login_email"]]//div[@role="alert"]'); }
 
     open () {
-        return super.open('/');
+        return super.open('/user/login');
     }
 
-    openLoginPageBtn () {
-        this.openLoginPage.click();
-    }
+    // openLoginPageBtn () {
+    //     this.openLoginPage.click();
+    // }
 
     setLogin (email) {
         this.inputUsername.setValue(email);
